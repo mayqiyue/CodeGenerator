@@ -269,7 +269,7 @@
 				TargetAttributes = {
 					3B11E93E1EC9DA28001F4782 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 2U4X7NE3S9;
+						DevelopmentTeam = A4ZY6X2WCR;
 						ProvisioningStyle = Automatic;
 					};
 					3B11E9541EC9DA28001F4782 = {
@@ -280,7 +280,7 @@
 					};
 					3B11E9671EC9DA69001F4782 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 2U4X7NE3S9;
+						DevelopmentTeam = A4ZY6X2WCR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -485,7 +485,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2U4X7NE3S9;
+				DEVELOPMENT_TEAM = A4ZY6X2WCR;
 				INFOPLIST_FILE = CodeGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.shengpan.CodeGenerator;
@@ -500,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2U4X7NE3S9;
+				DEVELOPMENT_TEAM = A4ZY6X2WCR;
 				INFOPLIST_FILE = CodeGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.shengpan.CodeGenerator;
@@ -543,7 +543,7 @@
 				CODE_SIGN_ENTITLEMENTS = SourceEditorPlugin/SourceEditorPlugin.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2U4X7NE3S9;
+				DEVELOPMENT_TEAM = A4ZY6X2WCR;
 				INFOPLIST_FILE = SourceEditorPlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -560,7 +560,7 @@
 				CODE_SIGN_ENTITLEMENTS = SourceEditorPlugin/SourceEditorPlugin.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2U4X7NE3S9;
+				DEVELOPMENT_TEAM = A4ZY6X2WCR;
 				INFOPLIST_FILE = SourceEditorPlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;

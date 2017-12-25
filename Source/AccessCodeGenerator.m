@@ -54,10 +54,10 @@
             }
             // “NSArray<NSArray<NSString" ">"">""name"
             PSProperty * proMoel = [[PSProperty alloc] init];
-            proMoel.keywords = keywords;
-            proMoel.dataType      = [[dataTypeAndName subarrayWithRange:NSMakeRange(0, dataTypeAndName.count - 1)] componentsJoinedByString:@" *"];
-            proMoel.name          = [dataTypeAndName lastObject];
-            proMoel.isObjectType   = [propertyString containsString:@"*"];
+            proMoel.keywords     = keywords;
+            proMoel.dataType     = [[dataTypeAndName subarrayWithRange:NSMakeRange(0, dataTypeAndName.count - 1)] componentsJoinedByString:@" *"];
+            proMoel.name         = [dataTypeAndName lastObject];
+            proMoel.isObjectType = [propertyString containsString:@"*"];
             [result addObject:proMoel];
         }
     }
@@ -135,13 +135,22 @@
     NSString *lazyGetter = @"";
     if (![model.keywords containsObject:ASSIGN]
         && ![model.dataType isEqualToString:ID]) {
-        lazyGetter = [NSString stringWithFormat:@"\n- (%@ *)%@ {\n	if (!_%@) {\n        _%@ = [[%@ alloc] init];\n	}\n	return _%@;\n}",
-                      model.dataType,
-                      model.name,
-                      model.name,
-                      model.name,
-                      model.dataType,
-                      model.name];
+        if ([model.dataType isEqualToString:@"UIButton"]) {
+            lazyGetter = [NSString stringWithFormat:@"\n- (UIButton *)%@ {\n    if (!_%@) {\n        _%@ = [UIButton buttonWithType:UIButtonTypeCustom];\n    }\n    return _%@;\n}",
+                          model.name,
+                          model.name,
+                          model.name,
+                          model.name];
+        }
+        else {
+            lazyGetter = [NSString stringWithFormat:@"\n- (%@ *)%@ {\n	if (!_%@) {\n        _%@ = [[%@ alloc] init];\n	}\n	return _%@;\n}",
+                          model.dataType,
+                          model.name,
+                          model.name,
+                          model.name,
+                          model.dataType,
+                          model.name];
+        }
     }
     return lazyGetter;
 }
